@@ -6,13 +6,16 @@ Tile server used for this assignment: [https://demotiles.maplibre.org/style.json
 ## Screenshots
 
 ### Main Activity to show all the Tracks of the User
-![Main Activity to show all the Tracks of the User](https://github.com/kanahia1/MaplibreAssignment/assets/114223204/9ac25588-8938-4444-849a-e351d326bd81){:height="200px"}
+<p align="start">
+<img src="https://github.com/kanahia1/MaplibreAssignment/assets/114223204/9ac25588-8938-4444-849a-e351d326bd81" width="250"> </p>
 
 ### Shows the Track in the Map
-![Shows the Track in the Map](https://github.com/kanahia1/MaplibreAssignment/assets/114223204/b78433a2-1d8f-4a2c-a94b-71b5963a07d8){:height="200px"}
+<p align="start">
+<img src="https://github.com/kanahia1/MaplibreAssignment/assets/114223204/b78433a2-1d8f-4a2c-a94b-71b5963a07d8" width="250"> </p>
 
 ### Same Track in enviroCar App
-![Same Track in enviroCar App](https://github.com/kanahia1/MaplibreAssignment/assets/114223204/121ea9d2-d505-4746-b813-aeae6b2ac55f){:height="200px"}
+<p align="start">
+<img src="https://github.com/kanahia1/MaplibreAssignment/assets/114223204/121ea9d2-d505-4746-b813-aeae6b2ac55f" width="250"> </p>
 
 ## Instructions
 1. Import the project through Android Studio or clone it
@@ -20,6 +23,14 @@ Tile server used for this assignment: [https://demotiles.maplibre.org/style.json
 2. Change the `x_user` and `x_token` in `string.xml` file with your own enviroCar credentials
      - `app/src/main/res/values/strings.xml`
 4. Yippee! You have hit the mark! 🎯
+
+## Dependencies
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+    implementation("org.maplibre.gl:android-sdk:10.0.2")
+    implementation("androidx.appcompat:appcompat:1.6.1")
 
 ## Need Help?
 Feel free to contact me on [LinkedIn](https://www.linkedin.com/in/kanahia-kaushal-9850bb253/)
