@@ -2,6 +2,7 @@ package com.kanahia.maplibreassignment.Activities
 
 import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.toBitmap
@@ -20,6 +21,9 @@ import com.mapbox.mapboxsdk.annotations.MarkerOptions
 import com.mapbox.mapboxsdk.camera.CameraPosition
 import com.mapbox.mapboxsdk.geometry.LatLng
 import com.mapbox.mapboxsdk.maps.MapView
+import com.mapbox.mapboxsdk.maps.MapboxMap
+import com.mapbox.mapboxsdk.maps.OnMapReadyCallback
+import com.mapbox.mapboxsdk.maps.Style
 import com.mapbox.mapboxsdk.style.layers.Layer
 import com.mapbox.mapboxsdk.style.layers.LineLayer
 import com.mapbox.mapboxsdk.style.layers.PropertyFactory
@@ -28,13 +32,14 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 
-class MapActivity : AppCompatActivity() {
+class MapActivity : AppCompatActivity(),OnMapReadyCallback {
 
     private lateinit var id: String
     private lateinit var mapView: MapView
     private lateinit var binding: ActivityMapBinding
     private var startTime = ""
     private var endTime = ""
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -59,6 +64,10 @@ class MapActivity : AppCompatActivity() {
             .get(RootViewModel::class.java)
         viewModel.fetchTrack(id)
 
+        val key = resources.getString(com.kanahia.maplibreassignment.R.string.map_tiler_api_key)
+        val mapId = "streets-v2"
+        val styleUrl = "https://api.maptiler.com/maps/$mapId/style.json?key=$key"
+
         val coordinatesList = mutableListOf<Point>()
         viewModel.track.observe(this) { track ->
             startTime = track.features.first().properties.time
@@ -72,9 +81,8 @@ class MapActivity : AppCompatActivity() {
                     coordinatesList.add(Point.fromLngLat(longitude, latitude))
                 }
             }
-
             mapView.getMapAsync {
-                it.setStyle("https://demotiles.maplibre.org/style.json") {
+                it.setStyle(styleUrl) {
                     it.addSource(
                         GeoJsonSource(
                             "line-source",
@@ -158,6 +166,10 @@ class MapActivity : AppCompatActivity() {
 
     private companion object{
         const val BASE_URL = "https://envirocar.org/"
+    }
+
+    override fun onMapReady(mapboxMap: MapboxMap) {
+    //        mapboxMap.setStyle(Style.getPredefinedStyle("Streets"))
     }
 
 }
