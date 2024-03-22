@@ -1,7 +1,7 @@
 # Maplibre Assignment
 This assignment project utilizes **Retrofit, MVVM Architecture, Maplibre and Recycler View** to show all the tracks
 
-Tile server used for this assignment: [https://demotiles.maplibre.org/style.json](https://demotiles.maplibre.org/style.json) as suggested by the documentation of [Maplibre](https://maplibre.org/maplibre-native/docs/book/android/getting-started-guide.html)
+Tile server used for this assignment: https://docs.maptiler.com/maplibre-gl-native-android/
 
 ## Screenshots
 
@@ -11,7 +11,8 @@ Tile server used for this assignment: [https://demotiles.maplibre.org/style.json
 
 ### Shows the Track in the Map
 <p align="start">
-<img src="https://github.com/kanahia1/MaplibreAssignment/assets/114223204/b78433a2-1d8f-4a2c-a94b-71b5963a07d8" width="250"> </p>
+<img src="https://github.com/kanahia1/MaplibreAssignment/assets/114223204/881693f4-1289-4200-860d-1461c39828d3" width="250"> </p>
+
 
 ### Same Track in enviroCar App
 <p align="start">
