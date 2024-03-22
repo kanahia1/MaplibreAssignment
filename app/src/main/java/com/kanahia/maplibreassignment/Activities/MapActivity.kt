@@ -20,6 +20,7 @@ import com.mapbox.mapboxsdk.annotations.MarkerOptions
 import com.mapbox.mapboxsdk.camera.CameraPosition
 import com.mapbox.mapboxsdk.geometry.LatLng
 import com.mapbox.mapboxsdk.maps.MapView
+import com.mapbox.mapboxsdk.style.layers.Layer
 import com.mapbox.mapboxsdk.style.layers.LineLayer
 import com.mapbox.mapboxsdk.style.layers.PropertyFactory
 import com.mapbox.mapboxsdk.style.sources.GeoJsonSource
@@ -95,20 +96,25 @@ class MapActivity : AppCompatActivity() {
                 }
                 val startLatLng = LatLng(coordinatesList.first().latitude(),coordinatesList.first().longitude())
                 val endLatLng = LatLng(coordinatesList.last().latitude(),coordinatesList.last().longitude())
-                val markerDrawable = ContextCompat.getDrawable(this,com.kanahia.maplibreassignment.R.drawable.map_default_map_marker)
-                val bitmap = markerDrawable!!.toBitmap()
-                val icon = IconFactory.getInstance(this)
-                    .fromBitmap(bitmap)
+                val startMarkerDrawable = ContextCompat.getDrawable(this,com.kanahia.maplibreassignment.R.drawable.start_marker)
+                val endMarkerDrawable = ContextCompat.getDrawable(this,com.kanahia.maplibreassignment.R.drawable.end_marker)
+
+                val startIcon = IconFactory.getInstance(this)
+                    .fromBitmap(startMarkerDrawable!!.toBitmap())
+
+                val endIcon = IconFactory.getInstance(this)
+                    .fromBitmap(endMarkerDrawable!!.toBitmap())
+
 
                 val markerOptions = MarkerOptions()
                     .position(startLatLng)
                     .title(startTime)
-                    .icon(icon)
+                    .icon(startIcon)
                 it.addMarker(markerOptions)
                 val markerOptions2 = MarkerOptions()
                     .position(endLatLng)
                     .title(endTime)
-                    .icon(icon)
+                    .icon(endIcon)
                 it.addMarker(markerOptions2)
             }
         }
