@@ -1,5 +1,5 @@
 # Maplibre Assignment
-This assignment project utilizes Retrofit, MVVM Architecture, Maplibre and Recycler View to show all the tracks
+This assignment project utilizes **Retrofit, MVVM Architecture, Maplibre and Recycler View** to show all the tracks
 
 Tile server used for this assignment: [https://demotiles.maplibre.org/style.json](https://demotiles.maplibre.org/style.json) as suggested by the documentation of [Maplibre](https://maplibre.org/maplibre-native/docs/book/android/getting-started-guide.html)
 
