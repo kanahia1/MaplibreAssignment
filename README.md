@@ -23,6 +23,7 @@ Tile server used for this assignment: https://docs.maptiler.com/maplibre-gl-nati
    - [https://github.com/kanahia1/MaplibreAssignment.git](https://github.com/kanahia1/MaplibreAssignment.git)
 2. Change the `x_user` and `x_token` in `string.xml` file with your own enviroCar credentials
      - `app/src/main/res/values/strings.xml`
+3. Change `map_tiler_api_key` with your own API KEY in `strings.xml` file      
 4. Yippee! You have hit the mark! 🎯
 
 ## Dependencies
