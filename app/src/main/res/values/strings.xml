@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Maplibre Assignment</string>
-    <string name="x_user">kanahia1</string>
-    <string name="x_token">markjerryIs0</string>
+    <string name="x_user">username</string>
+    <string name="x_token">password</string>
 </resources>
