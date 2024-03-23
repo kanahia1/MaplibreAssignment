@@ -41,6 +41,6 @@ You can download apk file from [here](https://drive.google.com/file/d/1RQpm8zFpV
     implementation("androidx.appcompat:appcompat:1.6.1")
 
 ## Need Help?
-Feel free to contact me on [LinkedIn](https://www.linkedin.com/in/kanahia-kaushal-9850bb253/)
+Feel free to contact me on [LinkedIn](https://www.linkedin.com/in/kanahia-kaushal-9850bb253/) [Gitter](https://matrix.to/#/@kanahia1:gitter.im)
 
 [![Instagram](https://img.shields.io/badge/Instagram-follow-purple.svg?logo=instagram&logoColor=white)](https://www.instagram.com/kanahia.jpeg/) 
