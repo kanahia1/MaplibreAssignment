@@ -1,5 +1,5 @@
 # Maplibre Assignment
-This assignment project utilizes **Retrofit, MVVM Architecture, Maplibre and Recycler View** to show all the tracks
+This solution aims to utilize **Retrofit, MVVM Architecture** to show all the tracks fetched using enviroCar api for a particular user. Then all the tracks are shown to user in **Recycler View**, on clicking the particular item of recycler view it takes user to another activity where the track is rendered on the map using **MapLibre Library**. The path of the track is shown using red line and the markers are used to illustrate starting and ending points. On clicking a particular marker a pop-up is shown which displays the timestamp.
 
 Tile server used for this assignment: https://docs.maptiler.com/maplibre-gl-native-android/
 
