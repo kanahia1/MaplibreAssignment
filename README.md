@@ -3,6 +3,9 @@ This assignment project utilizes **Retrofit, MVVM Architecture, Maplibre and Rec
 
 Tile server used for this assignment: https://docs.maptiler.com/maplibre-gl-native-android/
 
+## Screen Recording
+https://github.com/kanahia1/MaplibreAssignment/assets/114223204/df74fcc5-eebc-435a-b0f6-e62147901b60
+
 ## Screenshots
 
 ### Main Activity to show all the Tracks of the User
