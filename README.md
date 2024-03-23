@@ -26,6 +26,9 @@ Tile server used for this assignment: https://docs.maptiler.com/maplibre-gl-nati
 3. Change `map_tiler_api_key` with your own API KEY in `strings.xml` file      
 4. Yippee! You have hit the mark! 🎯
 
+## APK File
+You can download apk file from [here](https://drive.google.com/file/d/1RQpm8zFpVHjeN2dNAah9mVftMYyGqrN1/view?usp=sharing).
+
 ## Dependencies
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
